@@ -3,14 +3,14 @@ I  create the custom theme for shopify This is my first project in shopify first
 
 #Pre-requisites:
 
-Setup the development environment in your local machine i used gulp workflow environment for development.
-Sublime text
-Install yarn
-Learn liquid coding
-HTML
-CSS
-Javascript
-Bootstrap
+1.Setup the development environment in your local machine i used gulp workflow environment for development.
+2.Sublime text
+3.Install yarn
+4.Learn liquid coding
+5.HTML
+6.CSS
+7.Javascript
+8.Bootstrap
 
 This is the link of my custom theme clothing stand:
 
