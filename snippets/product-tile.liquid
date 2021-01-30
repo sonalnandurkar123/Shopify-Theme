@@ -1,0 +1,19 @@
+{% liquid
+assign has_second_image = false
+
+if product.images[1]
+ assign has_second_image = true
+endif 
+%}
+
+
+
+<a href="{{ product.url }}" class="product-tile{% if has_second_image %} product-tile--has-second-image {% endif %}">
+<div class="product-tile_image-wrapper"{% if has_second_image %} style="background-image: url({{ product.images[1] | img_url: '700x' }});"{% endif %} >
+ <img class="product-tile_image" src="{{ product.featured_image | img_url: "master"}}" alt="{{ product.featured_image.alt }}" />
+   <div class="product-tile_info">
+     <h3 class="product-tile_title">{{ product.title }}</h3>
+     <span class="product-tile_price">{{ product.price | money }}</span>
+   </div>
+</div>
+</a>
